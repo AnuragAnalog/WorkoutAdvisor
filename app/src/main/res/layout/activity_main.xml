@@ -17,7 +17,7 @@
         />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/workout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/textValue"
@@ -32,6 +32,8 @@
         android:layout_height="wrap_content"
         android:text="@string/findworkoutbutton"
         android:layout_centerHorizontal="true"
-        android:layout_below="@+id/workouttype"/>
+        android:layout_below="@+id/workouttype"
+        android:onClick="onClickFindWorkout"
+        />
 
 </RelativeLayout>
