@@ -18,7 +18,7 @@ public class WorkoutExpert {
             workout.add("Tricep Extension");
             workout.add("Tricep Pushdown");
         }
-        else if (workouttype.equals("Shoulder"))
+        else if (workouttype.equals("Shoulders"))
         {
             workout.add("Shoulder Press");
             workout.add("Shoulder Extension");
