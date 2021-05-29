@@ -8,13 +8,32 @@
 
     <Spinner
         android:id="@+id/workouttype"
-        android:layout_marginTop="35dp"
+        android:layout_marginTop="15dp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:entries="@array/workout_types"
+        android:layout_below="@+id/switchButton"
         />
+
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textDate"
+        android:layout_centerHorizontal="true"
+        android:text="@string/app_title"
+        android:textColor="@color/black"
+        android:textSize="35sp" />
+
+    <ToggleButton
+        android:id="@+id/switchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textTitle"
+        android:layout_centerHorizontal="true"
+        android:textOn="@string/toggleTextOn"
+        android:textOff="@string/toggleTextOff"/>
 
     <TextView
         android:id="@+id/workout"
@@ -29,11 +48,31 @@
     <Button
         android:id="@+id/findworkout"
         android:layout_width="wrap_content"
+        android:layout_marginTop="25dp"
         android:layout_height="wrap_content"
         android:text="@string/findworkoutbutton"
         android:layout_centerHorizontal="true"
         android:layout_below="@+id/workouttype"
         android:onClick="onClickFindWorkout"
+        />
+
+    <TextView
+        android:id="@+id/textDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/textTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginLeft="5dp"
+        android:textSize="15sp"
+        android:layout_toRightOf="@+id/textDate"
         />
 
 </RelativeLayout>

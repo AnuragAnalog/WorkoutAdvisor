@@ -1,7 +1,10 @@
 <resources>
     <string name="app_name">WorkoutAdvisor</string>
-    <string name="findworkoutbutton">Click Here</string>
+    <string name="app_title"> Work Out Advisor </string>
+    <string name="findworkoutbutton">Get Workout</string>
     <string name="textValue">Your Workouts Here</string>
+    <string name="toggleTextOn"> Gym </string>
+    <string name="toggleTextOff"> Home </string>
 
     <string-array name="workout_types">
         <item> Legs </item>
