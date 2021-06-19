@@ -52,16 +52,7 @@ public class FindWorkOutActivity extends Activity {
             }
         });
 
-        Switch dark = (Switch) findViewById(R.id.dark_mode);
-
-        dark.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
-                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
-                    }
-                }
-        );
+//        ToggleButton dark = (ToggleButton) findViewById(R.id.dark_mode);
     }
 
     public void onClickFindWorkout(View view) {
