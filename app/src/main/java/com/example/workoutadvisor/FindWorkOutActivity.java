@@ -5,12 +5,16 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.CompoundButton;
 import android.widget.Spinner;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatDelegate;
 
 public class FindWorkOutActivity extends Activity {
 
@@ -47,6 +51,17 @@ public class FindWorkOutActivity extends Activity {
                 }
             }
         });
+
+        Switch dark = (Switch) findViewById(R.id.dark_mode);
+
+        dark.setOnClickListener(
+                new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        AppCompatDelegate.setDefaultNightMode(AppCompatDelegate.MODE_NIGHT_YES);
+                    }
+                }
+        );
     }
 
     public void onClickFindWorkout(View view) {
