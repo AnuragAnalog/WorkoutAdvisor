@@ -37,7 +37,7 @@ public class FindWorkOutActivity extends Activity {
         SimpleDateFormat sdf2 = new SimpleDateFormat("HH:mm:ss");
         String currentTime = sdf2.format(new Date());
         time.setText(currentTime);
-
+        
         ToggleButton toggle = (ToggleButton) findViewById(R.id.switchButton);
 
         toggle.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
@@ -60,7 +60,7 @@ public class FindWorkOutActivity extends Activity {
         Spinner workouttype = (Spinner) findViewById(R.id.workouttype);
 
         String workout = String.valueOf(workouttype.getSelectedItem());
-
+        
 //        workouts.setText(workout);
 
         List<String> workoutList = expert.getworkout(workout, isGym);
